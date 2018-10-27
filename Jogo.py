@@ -394,7 +394,7 @@ __init__="__main__"
 
 rodar=True
 cenario=Cenario()
-clock.tick(120)
+
 espera=0
 acertado=False
 falas=False
@@ -405,7 +405,7 @@ sompausado=0
 
 while rodar:
     cenario.atualizarcenario()
-
+    clock.tick(120)
 
     for e in pygame.event.get():
         if e.type == QUIT:
